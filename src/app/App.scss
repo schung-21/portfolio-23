@@ -1,0 +1,139 @@
+@import '../index.scss';
+
+::placeholder {
+	color: $primary;
+}
+
+button.primary {
+	padding: 1.25rem 2rem;
+	color: $bg-light;
+	font-size: 1rem;
+	font-weight: 600;
+	background: $primary;
+	border: 0;
+	border-radius: 2rem;
+	transition: $transition;
+
+	&:hover {
+		scale: 1.1;
+	}
+}
+
+header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 10rem;
+	background: $bg-light;
+	z-index: 999;
+
+	@media (max-width: $bp-tablet) {padding: 2rem;}
+	@media (max-width: $bp-phone) {padding: 1.5rem 2rem;}
+
+	.title {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		color: $primary;
+		transition: $transition;
+		&:hover {opacity: .7;}
+
+		.logo {
+			height: 2.5rem;
+		}
+
+		h1 {
+			font-size: 1.25rem;
+			line-height: 1;
+			@media (max-width: $bp-phone) {display: none;}
+		}
+	}
+
+	#mobile-nav {
+		@extend %button-nobg;
+		display: none;
+		@media (max-width: $bp-phone) {display: block;}
+	}
+	
+	nav {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+
+		@media (max-width: $bp-phone) {display: none;}
+
+	
+		a {
+			color: $primary;
+			transition: $transition;
+			&:hover:not(.active) {opacity: .7;}
+		}
+	
+		.active {
+			font-weight: 700;
+			cursor: default;
+		}
+
+		input {
+			display: none;
+			margin-right: .5rem;
+			padding: .5rem;
+			border: 0;
+			border-bottom: 2px solid $primary;
+			background: transparent;
+		}
+
+		.search-button {
+			@extend %button-nobg;
+		}
+
+		#theme-button {
+			padding: .5rem 1rem;
+			color: $bg-light;
+			background: $primary;
+			border: 0;
+			border-radius: 2rem;
+		}
+	}
+}
+
+
+
+main { 
+	padding: 3rem 10rem 10rem;
+	@media (max-width: $bp-tablet) {padding: 3rem 2rem 10rem;}
+	@media (max-width: $bp-phone) {padding: 3rem 1rem 10rem;}
+}
+
+
+
+footer {
+	display: flex;
+	padding: 2.5rem 5rem;
+	min-height: 5rem;
+	color: $primary;
+	background: rgba(82, 43, 238, 0.05);
+
+	@media (max-width: $bp-tablet) {padding: 2.5rem 3rem;}
+	@media (max-width: $bp-phone) {
+		flex-flow: column; 
+		gap: 3rem;
+	}
+
+	div {flex-grow: 1;}
+
+	h3 {
+		margin-bottom: 1rem;
+		font-size: 1rem;
+		font-weight: 600;
+		@media (max-width: $bp-tablet) {margin-bottom: .5rem;}
+	}
+
+	a {
+		display: block;
+		color: $primary;
+		line-height: 2;
+	}
+}

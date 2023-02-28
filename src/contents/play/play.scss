@@ -1,0 +1,22 @@
+@import '../../index.scss';
+
+.play {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+
+    .play-thumb {
+        flex-grow: 1;
+        height: 15rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        @media (max-width: $bp-phone) {height: auto;}
+
+        img {
+            object-fit: cover;
+            height: 100%; width: 100%;
+            transition: $transition;
+            &:hover {scale: 1.1;}
+        }
+    }
+}

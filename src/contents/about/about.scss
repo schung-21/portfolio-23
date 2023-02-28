@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.about {
+    padding: 3rem 10rem;
+    @media (max-width: $bp-tablet) {padding: 2rem;}
+	@media (max-width: $bp-phone) {padding: 0;}
+
+    & > div {
+        display: flex;
+        gap: 5rem;
+
+        @media (max-width: $bp-tablet) {gap: 2rem;}
+    }
+
+    .profile {
+        display: flex; justify-content: center; align-items: center;
+        width: 45%; 
+        height: 30rem;
+        background: rgba(82, 43, 238, .2);
+        border-radius: 1.5rem;
+    }
+
+    .intro {
+        width: 55%;
+        margin: .5rem;
+        font-size: 1.35rem;
+        line-height: 1.5;
+    }
+}
