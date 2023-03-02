@@ -8,10 +8,13 @@ const Artbash = () => {
     return (
         <>
             <Brief
-                work={artbash}
+                name='ArtBash 2023'
+                work={artbash} 
+                brief='Department of Contemporary Practices commissioned the Visual Communication Design students to create an identity and promotional materials for ArtBash, the freshman art exhibition.'
+                role='Designer (solo work)'
+                date='September - November 2022 (3 months)'
             />
             <div>
-
             </div>
         </>
     );
