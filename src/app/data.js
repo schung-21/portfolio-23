@@ -15,7 +15,7 @@ import prevThumb from '../assets/prev/thumb.png';
 export const WORK = {
     'artbash': {
         title: 'Promoting Freshmen Exhibition',
-        tags: ['identity', 'poster'],
+        tags: ['identity', 'typeface', 'poster', 'social media'],
         year: 2022,
         thumb: artbashThumb,
         slug: 'artbash'

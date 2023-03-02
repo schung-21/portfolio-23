@@ -1,12 +1,11 @@
 import React from "react";
-// import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 
 import './play.scss';
 
 function importAll(r) {
     let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
     return images;
 }
   
