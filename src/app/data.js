@@ -3,7 +3,9 @@ import mcaThumb from '../assets/mca/thumb.png';
 import earthThumb from '../assets/earth/poster.jpg';
 import dsmithThumb from '../assets/dsmith/thumb.png';
 import prevThumb from '../assets/prev/thumb.png';
+
 import Artbash from '../contents/work/projects/artbash';
+import Mca from '../contents/work/projects/mca';
 
 // {
 //     title: 'Title',
@@ -28,7 +30,8 @@ export const WORK = [
         year: 2021,
         thumb: mcaThumb,
         color: ['#282828', '#efefef'],
-        slug: 'mca-identity'
+        slug: 'mca-identity',
+        content: <Mca />
     }, {
         title: 'Designing Across a Campaign',
         tags: ['poster', 'publication', 'illustration'],
