@@ -9,7 +9,7 @@ const Work = () => {
     return (
         <>
             <div className="intro">
-                <h3>Designer<br/>and Coder</h3>
+                <h3></h3>
             </div>
             <div className='work'>
                 {works.map((work) => <Card work={work}/>)}

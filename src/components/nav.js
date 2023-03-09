@@ -8,7 +8,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 const Navigation = () => {
     return (
         <>
-        <button id='mobile-nav' onClick={() => {}}>
+        <button id='mobile-nav' onClick={() => {document.querySelector('nav').classList.toggle('toggle-nav');}}>
             <FontAwesomeIcon icon={faBars} />
         </button>
         <nav>

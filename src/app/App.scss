@@ -19,10 +19,11 @@ button.primary {
 	}
 }
 
-.icon {
-	// width: 1rem;
-	fill: $primary;
-}
+.icon {fill: $primary;}
+
+
+
+/////////// HEADER ///////////
 
 header {
 	position: sticky;
@@ -48,6 +49,7 @@ header {
 
 		h1 {
 			font-size: 1.1rem;
+			font-weight: 800;
 			line-height: 1;
 			@media (max-width: $bp-phone) {display: none;}
 		}
@@ -57,6 +59,9 @@ header {
 		@extend %button-nobg;
 		display: none;
 		@media (max-width: $bp-phone) {display: block;}
+		svg {
+			height: 1.25rem;
+		}
 	}
 	
 	nav {
@@ -64,9 +69,18 @@ header {
 		align-items: center;
 		gap: 2rem;
 
-		@media (max-width: $bp-phone) {display: none;}
+		@media (max-width: $bp-phone) {
+			display: none;
+			position: absolute;
+			top: 5rem; left: 0;
+			flex-flow: column;
+			gap: 1.5rem;
+			padding: 2rem 2rem 4rem;
+			width: 100%;
+			overflow: hidden;
+			background: $bg-light;
+		}
 
-	
 		a {
 			color: $primary;
 			transition: $transition;
@@ -79,16 +93,28 @@ header {
 		}
 
 		input {
-			display: none;
-			margin-right: .5rem;
-			padding: .5rem;
+			width: 9rem;
+			padding: .15rem .5rem;
 			border: 0;
 			border-bottom: 2px solid $primary;
 			background: transparent;
+			transition: all .75s ease-in-out;
+			@media (max-width: $bp-phone) {width: 100%; padding: .25rem .5rem;}
+		}
+
+		.search-toggle {
+			width: 0; padding: .15rem 0;
+			@media (max-width: $bp-phone) {width: 100%; padding: .25rem .5rem;}
 		}
 
 		.search-button {
 			@extend %button-nobg;
+			svg {
+				margin-top: 5px;
+				width: .8rem;
+				fill: $primary;
+			}
+			@media (max-width: $bp-phone) {display: none;}
 		}
 
 		#theme-button {
@@ -99,17 +125,23 @@ header {
 			border-radius: 2rem;
 		}
 	}
+
+	.toggle-nav {display: flex;}
 }
 
 
+
+/////////// MAIN ///////////
 
 main { 
-	padding: 3rem 10rem 10rem;
-	@media (max-width: $bp-tablet) {padding: 3rem 2rem 10rem;}
-	@media (max-width: $bp-phone) {padding: 3rem 1rem 10rem;}
+	padding: 0 10rem 10rem;
+	@media (max-width: $bp-tablet) {padding: 0 3rem 10rem;}
+	@media (max-width: $bp-phone) {padding: 0 1rem 10rem;}
 }
 
 
+
+/////////// FOOTER ///////////
 
 footer {
 	display: flex;
@@ -129,7 +161,6 @@ footer {
 	h3 {
 		margin-bottom: 1rem;
 		font-size: 1rem;
-		font-weight: 600;
 		@media (max-width: $bp-tablet) {margin-bottom: .5rem;}
 	}
 

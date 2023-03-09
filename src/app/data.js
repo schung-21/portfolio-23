@@ -1,6 +1,6 @@
 import artbashThumb from '../assets/artbash/poster-1main.png';
 import mcaThumb from '../assets/mca/thumb.png';
-import earthThumb from '../assets/earth/thumb.png';
+import earthThumb from '../assets/earth/poster.jpg';
 import dsmithThumb from '../assets/dsmith/thumb.png';
 import prevThumb from '../assets/prev/thumb.png';
 import Artbash from '../contents/work/projects/artbash';
@@ -19,6 +19,7 @@ export const WORK = [
         tags: ['identity', 'typeface', 'poster', 'social media'],
         year: 2022,
         thumb: artbashThumb,
+        color: ['#282828', '#e4e1f5'],
         slug: 'artbash',
         content: <Artbash/>
     }, {
@@ -26,29 +27,34 @@ export const WORK = [
         tags: ['identity', 'poster', 'publication', 'website'],
         year: 2021,
         thumb: mcaThumb,
+        color: ['#282828', '#efefef'],
         slug: 'mca-identity'
     }, {
         title: 'Designing Across a Campaign',
         tags: ['poster', 'publication', 'illustration'],
         year: 2020,
         thumb: earthThumb,
+        color: ['#244ba6', '#c0d4f0'],
         slug: 'because-earth'
     }, {
         title: 'Book for David Smith',
         tags: ['publication'],
         year: 2020,
         thumb: dsmithThumb,
+        color: ['#282828', '#efefef'],
         slug: 'david-smith'
     }, {
         title: 'My Old Portfolio',
         tags: ['website'],
         year: 2021,
         thumb: prevThumb,
+        color: ['#282828', '#efefef'],
         slug: 'old-portfolio'
     }, {
         title: 'Coming soon...',
         tags: ['stay', 'in', 'touch'],
         year: 2023,
+        color: ['#282828', '#efefef'],
         slug: ''
     },
 ];
