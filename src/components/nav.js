@@ -2,8 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SearchBar from './search';
 import Theme from '../contents/theme/theme';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import {ReactComponent as Bars} from '../assets/icons/bars.svg';
 
 const Navigation = () => {
     return (
@@ -13,7 +12,7 @@ const Navigation = () => {
             document.querySelector('header').classList.toggle('toggle-head');
             document.querySelector('main').classList.toggle('toggle-bg');
         }}>
-            <FontAwesomeIcon icon={faBars} />
+            <Bars />
         </button>
         <nav>
             <NavLink 
