@@ -8,7 +8,11 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 const Navigation = () => {
     return (
         <>
-        <button id='mobile-nav' onClick={() => {document.querySelector('nav').classList.toggle('toggle-nav');}}>
+        <button id='mobile-nav' onClick={() => {
+            document.querySelector('nav').classList.toggle('toggle-nav');
+            document.querySelector('header').classList.toggle('toggle-head');
+            document.querySelector('main').classList.toggle('toggle-bg');
+        }}>
             <FontAwesomeIcon icon={faBars} />
         </button>
         <nav>
@@ -25,7 +29,7 @@ const Navigation = () => {
                 className={({ isActive }) => isActive ? 'active' : ''}
             >about</NavLink>
 
-            <SearchBar />
+            {/* <SearchBar /> */}
             {/* <Theme /> */}
         </nav>
         </>

@@ -9,7 +9,7 @@ function importAll(r) {
     return images;
 }
   
-const images = importAll(require.context('../../assets/play', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../assets/play', false, /\.(png|jpe?g|svg|gif)$/));
   
 const Play = () => {
     const playlist = Object.values(images);

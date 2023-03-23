@@ -31,7 +31,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 10rem;
+	padding: 2rem 12rem;
 	background: $bg-light;
 	z-index: 999;
 
@@ -39,7 +39,7 @@ header {
 
 	.title {
 		display: flex;
-		align-items: center;
+		// align-items: center;
 		gap: .7rem;
 		color: $primary;
 		transition: $transition;
@@ -79,6 +79,7 @@ header {
 			width: 100%;
 			overflow: hidden;
 			background: $bg-light;
+
 		}
 
 		a {
@@ -125,20 +126,13 @@ header {
 			border-radius: 2rem;
 		}
 	}
-
-	.toggle-nav {display: flex;}
 }
 
-
-
-/////////// MAIN ///////////
-
-main { 
-	padding: 0 10rem 10rem;
-	@media (max-width: $bp-tablet) {padding: 0 3rem 10rem;}
-	@media (max-width: $bp-phone) {padding: 0 1rem 10rem;}
+.toggle {
+	&-head {box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);}
+	&-nav {display: flex;}
+	&-bg {filter: blur(5px); pointer-events: none;}
 }
-
 
 
 /////////// FOOTER ///////////

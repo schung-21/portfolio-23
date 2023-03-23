@@ -1,6 +1,10 @@
 @import '../../index.scss';
 
 .play {
+    padding: 2rem 10vw 10rem;
+	@media (max-width: $bp-tablet) {padding: 2rem 3rem 10rem;}
+	@media (max-width: $bp-phone) {padding: 2rem 1rem 10rem;}
+
     display: flex;
     flex-flow: row wrap;
     gap: 1rem;

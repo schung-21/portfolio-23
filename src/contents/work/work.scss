@@ -1,19 +1,16 @@
 @import '../../index.scss';
 
-.intro {
-    margin: 5rem 3rem 10rem;
-    font-size: 3rem;
-    line-height: 1.2;
+// .intro {
+//     margin: 5rem 2rem 10rem;
+//     font-size: 3rem;
+//     line-height: 1.2;
+//     color: $primary;
 
-    strong {
-        color: $primary;
-    }
-
-    @media (max-width: $bp-phone) {
-        margin: 3rem 1rem 7rem;
-        font-size: 2rem;
-    }
-}
+//     @media (max-width: $bp-phone) {
+//         margin: 3rem 1rem 7rem;
+//         font-size: 2rem;
+//     }
+// }
 
 .work {
     display: grid;
@@ -21,24 +18,36 @@
     row-gap: 2rem;
     column-gap: 2rem;
 
-    @media (max-width: $bp-phone) {grid-template: auto / 1fr; row-gap: 1rem;}
+    margin: 2rem 15vw 10rem;
+	@media (max-width: $bp-tablet) {margin: 2rem 3rem 10rem;}
+	@media (max-width: $bp-phone) {
+        margin: 2rem 1.5rem 10rem;
+        grid-template: auto / 1fr; 
+        row-gap: 1rem;
+    }
 
     .thumb {
-        display: flex;
-        flex-flow: column;
-        padding: 2rem 2.5rem;
-        height: 30rem;
+        aspect-ratio: auto 16 / 9;
         overflow: hidden;
         color: $primary;
         background: $bg-light;
         text-decoration: none;
         border-radius: 1rem;
-        filter: $shadow;
-        transition: all .5s ease-in-out;
+        transition: $transition;
 
-        @media (max-width: $bp-phone) {
-            padding: 1.5rem 2rem;
-            height: 35rem;
+        img {
+            object-fit: cover;
+            height: 100%;
+            transition: $transition;
+        }
+
+        &-detail {
+            width: 100%;
+            height: 0;
+            padding: 0 2.5rem;
+            background: $bg-light;
+            border-radius: 1rem 1rem 0 0;
+            transition: $transition;
         }
 
         &-title {
@@ -47,9 +56,8 @@
             align-items: center;
 
             h2 {
-                // font-family: gitan-latin;
                 font-size: 1.3rem;
-                font-weight: 800;
+                font-weight: 600;
                 @media (max-width: $bp-phone) {font-size: 1rem;}
             }
 
@@ -60,28 +68,18 @@
             @extend %tags;
         }
 
-        &-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 -2.5rem -2rem;
-            height: inherit;
-            background: rgba(82, 43, 238, 0.15);
-            overflow: hidden;
-
-            img {
-                object-fit: scale-down;
-                height: 90%; 
-                filter: drop-shadow(0 .5rem 1rem rgba(0,0,0,.3));
-                transition: all .5s ease-in-out;
-            }
-        }
-
         &:hover {
             transform: translateY(-.5rem);
-            filter: drop-shadow(0 1rem 1rem rgba(82, 43, 238, .2));
+            filter: $shadow;
 
-            img {height: 120%;}
+            img {filter: brightness(0.5);}
+
+            .thumb-detail {
+                position: absolute;
+                bottom: 0;
+                padding: 2rem 2.5rem;
+                height: auto;
+            }
         }
     }
 }

@@ -3,39 +3,34 @@
 .project {
     img {pointer-events: none;}
 
-    @media (max-width: $bp-tablet) {
-        padding: 0 2rem;
-    }
+    margin: 2rem 15vw 10rem;
+    @media (max-width: $bp-tablet) {margin: 0 5vw 10rem;}
+    @media (max-width: $bp-phone) {margin: 0 1.5rem 10rem;}
 }
 
 .project-brief {
-
-    img {
-        width: calc(100% + 20rem);
-        max-height: 70vh;
-        margin: 0 -10rem;
-        object-fit: cover;
-
-        @media (max-width: $bp-tablet) {
-            width: calc(100% + 10rem);
-            margin: 0 -5rem;
-        }
-    }
-
     h1 {
-        margin-top: 5rem;
+        margin: 5rem 0 2rem;
         color: $primary;
-        font-family: gitan-latin;
         font-size: 3rem;
-        font-weight: 800;
+        font-weight: 700;
         line-height: 1.3;
 
         @media (max-width: $bp-phone) {font-size: 2.5rem;}
     }
 
-    h2 {
-        margin-bottom: 3rem;
-        color: $primary;
+    h3 {
+        font-size: .7rem;
+        font-weight: 300;
+        line-height: 1.75;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        margin-right: 2rem;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.75;
     }
 
     .info {
@@ -52,32 +47,14 @@
             .tags {grid-column: span 2;}
         }
 
-        h3 {line-height: 1.75;}
-
-        .overview {
-            grid-row: span 2;
-            p {line-height: 1.75;}
-        }
+        .overview {grid-row: span 2;}
         .taglist {@extend %tags;}
     }
 }
 
-.project-toc {
-    position: sticky;
-    top: 10rem;
-    margin-top: 3rem;
-    width: 10rem;
-    list-style: none;
-    line-height: 2;
-    @media (max-width: $bp-phone) {display: none;}
-
-    .active {font-weight: 800;}
-}
-
 .project-main {
-    margin: -8rem 12rem 0;
-    @media (max-width: $bp-tablet) {margin: -8rem 0 0 10rem;}
-    @media (max-width: $bp-phone) {margin: 3rem 0 0;}
+    margin: 5rem 0;
+    @media (max-width: $bp-phone) {margin: 3rem 0;}
 
     section {
         line-height: 1.75;
@@ -86,20 +63,36 @@
     h2 {
         margin: 5rem 0 2rem;
         color: $primary;
-        font-family: gitan-latin;
-        font-size: 2.5rem;
-        font-weight: 600;
+        font-size: 2rem;
     }
 
     h3 {
-        margin-top: 2rem;
+        margin: 3rem 0 1rem;
         font-size: 1.5rem;
-        font-weight: 800;
+        font-weight: 600;
     }
 
-    p {margin: .5rem 0;}
+    p {
+        margin: 1rem 0;
+        padding: 2rem 3rem;
+        color: #5f5f5f;
+        border: 1px solid rgba(82, 43, 238, 0.1);
+        border-radius: 1.5rem;
+    }
 
-    img {width: 100%;}
+    img {
+        width: 100%;
+        border-radius: 1.5rem;
+    }
+
+    .fullscreen {
+        width: 100vw;
+        margin: 2rem -15vw;
+        border-radius: 0;
+
+        @media (max-width: $bp-tablet) {margin: 2rem -5vw;}
+        @media (max-width: $bp-phone) {margin: 2rem -1.5rem;}
+    }
 
     ul {list-style-type: none;}
 
@@ -109,7 +102,7 @@
         display: flex;
         flex-flow: row nowrap;
         gap: .5rem;
-        margin: .5rem 0 3rem;
+        margin: .5rem 0;
         @media (max-width: $bp-phone) {flex-flow: column;}
 
         div {flex: 1 1 0;}
@@ -135,7 +128,7 @@
 }
 
 .navigate {
-    margin: 10rem 10rem 0;
+    margin: 7rem 0;
     display: flex;
     justify-content: space-between;
 

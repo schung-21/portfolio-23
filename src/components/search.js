@@ -1,7 +1,10 @@
-import React from "react";
-import {ReactComponent as Search} from '../assets/icons/search.svg';
+import React, { useRef } from "react";
+import { useSearchParams, useNavigate } from 'react-router-dom';
+import { ReactComponent as Search } from '../assets/icons/search.svg';
 
 const SearchBar = () => {
+    const navigate = useNavigate();
+
     return (
         <div className='search'>
             <input className="search-toggle" type='text' placeholder='Search...'></input>

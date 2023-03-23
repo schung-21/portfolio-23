@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
             <div className='contact'>
                 <h3>Contact Me</h3>
-                <a href='mailto:schung21@saic.edu' target='_blank'><Email className='icon social' />schung21@saic.edu</a>
+                <a href='mailto:schung21@saic.edu' target='_blank'><Email className='icon social' />soomin2c@gmail.com</a>
                 <div className='social'>
                     <a className="icon social" href="https://www.instagram.com/ulw.oos/" target='_blank'><Instagram /></a>
                     <a className="icon social" href='https://www.linkedin.com/in/ulwoos/' target='_blank'><Linkedin /></a>

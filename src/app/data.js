@@ -1,11 +1,13 @@
-import artbashThumb from '../assets/artbash/poster-1main.png';
+import artbashThumb from '../assets/artbash/thumb.png';
 import mcaThumb from '../assets/mca/thumb.png';
-import earthThumb from '../assets/earth/poster.jpg';
+import earthThumb from '../assets/earth/thumb.png';
 import dsmithThumb from '../assets/dsmith/thumb.png';
 import prevThumb from '../assets/prev/thumb.png';
 
 import Artbash from '../contents/work/projects/artbash';
 import Mca from '../contents/work/projects/mca';
+import Dsmith from '../contents/work/projects/dsmith';
+import Earth from '../contents/work/projects/earth';
 
 // {
 //     title: 'Title',
@@ -17,47 +19,43 @@ import Mca from '../contents/work/projects/mca';
 
 export const WORK = [
     {
-        title: 'Promoting Freshmen Exhibition',
+        title: 'ArtBash',
         tags: ['identity', 'typeface', 'poster', 'social media'],
         year: 2022,
         thumb: artbashThumb,
-        color: ['#282828', '#e4e1f5'],
         slug: 'artbash',
         content: <Artbash/>
     }, {
-        title: 'Redesigning Identity System',
+        title: 'MCA Chicago',
         tags: ['identity', 'poster', 'publication', 'website'],
         year: 2021,
         thumb: mcaThumb,
-        color: ['#282828', '#efefef'],
-        slug: 'mca-identity',
+        slug: 'mca',
         content: <Mca />
     }, {
-        title: 'Designing Across a Campaign',
+        title: 'Because Earth',
         tags: ['poster', 'publication', 'illustration'],
         year: 2020,
         thumb: earthThumb,
-        color: ['#244ba6', '#c0d4f0'],
-        slug: 'because-earth'
+        slug: 'because-earth',
+        content: <Earth />
     }, {
-        title: 'Book for David Smith',
+        title: 'The Field of David Smith',
         tags: ['publication'],
         year: 2020,
         thumb: dsmithThumb,
-        color: ['#282828', '#efefef'],
-        slug: 'david-smith'
+        slug: 'david-smith',
+        content: <Dsmith />
     }, {
-        title: 'My Old Portfolio',
+        title: '2021 Portfolio',
         tags: ['website'],
         year: 2021,
         thumb: prevThumb,
-        color: ['#282828', '#efefef'],
-        slug: 'old-portfolio'
+        slug: 'portfolio-21'
     }, {
         title: 'Coming soon...',
         tags: ['stay', 'in', 'touch'],
         year: 2023,
-        color: ['#282828', '#efefef'],
         slug: ''
     },
 ];
