@@ -9,8 +9,8 @@ const Dsmith = () => {
         <div className='project'>
             <Brief 
                 work={dsmith} 
-                brief='David Smith is an American painter and sculptor' 
-                role='Designer'
+                brief='David Smith was one of the pioneers of welded metal sculptures. I made an art book about him and his art practices, utilizing his iconic painted geometric forms into the typography.' 
+                role='Designer, Student'
                 date='March - April 2021 (1 month)'
             />
 

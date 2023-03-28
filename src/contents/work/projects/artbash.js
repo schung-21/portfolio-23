@@ -10,8 +10,8 @@ const Artbash = () => {
         <div className="project">
             <Brief
                 work={artbash} 
-                brief='Department of Contemporary Practices commissioned the Visual Communication Design students to create an identity and promotional materials for ArtBash, the freshman art exhibition. There are infinite possibilities where each student has their own, unique ideas. Using the imagery of the universe, the ArtBash 2023 posters represent the wide variety, uniqueness, and endless potential of the Contemporary Practices students and their art practices.'
-                role='Designer'
+                brief='Department of Contemporary Practices commissioned the Visual Communication Design students to create an identity and promotional materials for ArtBash, the freshman art exhibition. I designed the identity and promotional materials for ArtBash by highlighting their uniqueness and endless possibilities.'
+                role='Designer, Student'
                 date='September - November 2022 (3 months)'
             />
 

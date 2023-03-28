@@ -2,12 +2,13 @@ import artbashThumb from '../assets/artbash/thumb.png';
 import mcaThumb from '../assets/mca/thumb.png';
 import earthThumb from '../assets/earth/thumb.png';
 import dsmithThumb from '../assets/dsmith/thumb.png';
-import prevThumb from '../assets/prev/thumb.png';
+import beerThumb from '../assets/beer/thumb.png';
 
 import Artbash from '../contents/work/projects/artbash';
 import Mca from '../contents/work/projects/mca';
 import Dsmith from '../contents/work/projects/dsmith';
 import Earth from '../contents/work/projects/earth';
+import Beer from '../contents/work/projects/beer';
 
 // {
 //     title: 'Title',
@@ -19,7 +20,7 @@ import Earth from '../contents/work/projects/earth';
 
 export const WORK = [
     {
-        title: 'ArtBash',
+        title: 'ArtBash 2023',
         tags: ['identity', 'typeface', 'poster', 'social media'],
         year: 2022,
         thumb: artbashThumb,
@@ -27,14 +28,14 @@ export const WORK = [
         content: <Artbash/>
     }, {
         title: 'MCA Chicago',
-        tags: ['identity', 'poster', 'publication', 'website'],
+        tags: ['identity', 'poster', 'web', 'collateral'],
         year: 2021,
         thumb: mcaThumb,
         slug: 'mca',
         content: <Mca />
     }, {
         title: 'Because Earth',
-        tags: ['poster', 'publication', 'illustration'],
+        tags: ['poster', 'illustration', 'collateral'],
         year: 2020,
         thumb: earthThumb,
         slug: 'because-earth',
@@ -47,16 +48,12 @@ export const WORK = [
         slug: 'david-smith',
         content: <Dsmith />
     }, {
-        title: '2021 Portfolio',
-        tags: ['website'],
-        year: 2021,
-        thumb: prevThumb,
-        slug: 'portfolio-21'
-    }, {
-        title: 'Coming soon...',
-        tags: ['stay', 'in', 'touch'],
-        year: 2023,
-        slug: ''
+        title: 'Summer Hackathon: Beer',
+        tags: ['web', 'uiux', 'identity'],
+        year: 2022,
+        thumb: beerThumb,
+        slug: 'beer',
+        content: <Beer />
     },
 ];
 
@@ -81,6 +78,12 @@ export const PLAY = [
         tags: ['art', 'package'],
         year: 2023,
         slug: 'lucky-charms'
+    }, {
+        title: 'Dynamic Word: Puzzle',
+        desc: '',
+        tags: ['motion'],
+        year: 2023,
+        slug: 'puzzle'
     }, {
         title: 'Hero Jam Package',
         desc: '',

@@ -14,13 +14,13 @@ const About = () => {
                     <img id='icon2' src={require('../../assets/about/profile2.jpg')} />
                 </div>
                 <p className="intro">
-                    Hello! I'm Soomin, a designer based in Chicago. I'm currently a senior studying in the School of Art Institute of Chicago.
+                    Hello! I'm Soomin, a designer based in Chicago. I'm currently a senior student studying in the School of Art Institute of Chicago, focusing on Visual Communication Design. I am also interested in front-end web development, usually working with React.js.
                     <br/><br/>
                     In my free time, I enjoy watching sci-fi movies and brewing coffee.
                 </p>
             </section>
 
-            <section className="more">
+            {/* <section className="more">
                 <h2>More about me...</h2>
                 <div className="cols">
                     <div>
@@ -28,7 +28,7 @@ const About = () => {
                         <p>They are my favorite character, Nagano's Kuma and Chiikawa.</p>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="contact">
                 <h2>Connect</h2>

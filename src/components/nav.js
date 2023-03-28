@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import SearchBar from './search';
-import Theme from '../contents/theme/theme';
+// import SearchBar from './search';
+// import Theme from '../contents/theme/theme';
 import {ReactComponent as Bars} from '../assets/icons/bars.svg';
 
 const Navigation = () => {
