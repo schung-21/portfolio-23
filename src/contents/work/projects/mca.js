@@ -15,24 +15,24 @@ const Mca = () => {
             />
 
             <div className="project-main">
-                <img className="fullscreen" src={require('../../../assets/mca/logo-1.png')} />
+                <img className="fullscreen" src={require('../../../assets/mca/logo-1.png')} alt='' />
                 <h3>Logo</h3>
-                <img src={require('../../../assets/mca/logo-2.png')} />
-                <img src={require('../../../assets/mca/logo-3.png')} />
+                <img src={require('../../../assets/mca/logo-2.png')} alt='' />
+                <img src={require('../../../assets/mca/logo-3.png')} alt='' />
 
                 <h3>Stationery</h3>
-                <img src={require('../../../assets/mca/business-card.png')} />
-                <img src={require('../../../assets/mca/stationery.png')} />
+                <img src={require('../../../assets/mca/business-card.png')} alt='' />
+                <img src={require('../../../assets/mca/stationery.png')} alt='' />
 
                 <h3>Posters</h3>
                 <ul className="cols">
-                    <li><img src={require('../../../assets/mca/poster-1.png')} /></li>
-                    <li><img src={require('../../../assets/mca/poster-2.png')} /></li>
-                    <li><img src={require('../../../assets/mca/poster-3.png')} /></li>
+                    <li><img src={require('../../../assets/mca/poster-1.png')} alt='' /></li>
+                    <li><img src={require('../../../assets/mca/poster-2.png')} alt='' /></li>
+                    <li><img src={require('../../../assets/mca/poster-3.png')} alt='' /></li>
                 </ul>
 
                 <h3>Website</h3>
-                <img src={require('../../../assets/mca/website.png')} />
+                <img src={require('../../../assets/mca/website.png')} alt='' />
             </div>
         </div>
     );

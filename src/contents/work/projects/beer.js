@@ -14,16 +14,16 @@ const Beer = () => {
                 date='June 24-25, 2022'
             />
             <div className='project-main'>
-                <img className='fullscreen' src={require('../../../assets/beer/logo.png')} />
+                <img className='fullscreen' src={require('../../../assets/beer/logo.png')} alt='' />
                 <ul className='cols'>
-                    <li><img src={require('../../../assets/beer/home.png')} /></li>
-                    <li><img src={require('../../../assets/beer/search.png')} /></li>
-                    <li><img src={require('../../../assets/beer/detail.png')} /></li>
+                    <li><img src={require('../../../assets/beer/home.png')} alt='' /></li>
+                    <li><img src={require('../../../assets/beer/search.png')} alt='' /></li>
+                    <li><img src={require('../../../assets/beer/detail.png')} alt='' /></li>
                 </ul>
                 <ul className='cols'>
-                <li><img src={require('../../../assets/beer/review.png')} /></li>
-                <li><img src={require('../../../assets/beer/upload.png')} /></li>
-                <li><img src={require('../../../assets/beer/account.png')} /></li>
+                <li><img src={require('../../../assets/beer/review.png')} alt='' /></li>
+                <li><img src={require('../../../assets/beer/upload.png')} alt='' /></li>
+                <li><img src={require('../../../assets/beer/account.png')} alt='' /></li>
                 </ul>
             </div>
         </div>

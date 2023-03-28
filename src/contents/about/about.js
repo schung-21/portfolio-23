@@ -10,8 +10,8 @@ const About = () => {
         <div className="about">
             <section>
                 <div className='profile'>
-                    <img id='icon1' src={require('../../assets/about/profile1.png')} />
-                    <img id='icon2' src={require('../../assets/about/profile2.jpg')} />
+                    <img id='icon1' src={require('../../assets/about/profile1.png')} alt='profile picture' />
+                    <img id='icon2' src={require('../../assets/about/profile2.jpg')} alt='profile picture (ac)' />
                 </div>
                 <p className="intro">
                     Hello! I'm Soomin, a designer based in Chicago. I'm currently a senior student studying in the School of Art Institute of Chicago, focusing on Visual Communication Design. I am also interested in front-end web development, usually working with React.js.

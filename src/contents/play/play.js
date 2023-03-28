@@ -16,7 +16,7 @@ const Play = () => {
 
     return (
         <div className='play'>
-            {playlist.map((image, i) => <Link className='play-thumb' key={i}><img src={image}/></Link>)}
+            {playlist.map((image, i) => <Link className='play-thumb' key={i}><img src={image} alt='' /></Link>)}
         </div>
     );
 };

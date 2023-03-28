@@ -1,7 +1,7 @@
 {
   "name": "portfolio-23",
   "version": "0.1.0",
-  "homepage": "https://schung-21.github.io/portfolio-23",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",

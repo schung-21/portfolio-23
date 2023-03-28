@@ -15,25 +15,25 @@ const Earth = () => {
             />
 
             <div className="project-main">
-                <img className="fullscreen" src={require('../../../assets/earth/teaser.jpg')} />
+                <img className="fullscreen" src={require('../../../assets/earth/teaser.jpg')} alt='' />
                 <h3>Poster</h3>
-                <img src={require('../../../assets/earth/poster.jpg')} />
+                <img src={require('../../../assets/earth/poster.jpg')} alt='' />
                 <h3>Invitation</h3>
                 <ul className="cols">
-                    <li><img src={require('../../../assets/earth/invitation-1.jpg')} /></li>
-                    <li><img src={require('../../../assets/earth/invitation-2.jpg')} /></li>
+                    <li><img src={require('../../../assets/earth/invitation-1.jpg')} alt='' /></li>
+                    <li><img src={require('../../../assets/earth/invitation-2.jpg')} alt='' /></li>
                 </ul>
                 <h3>Tickets</h3>
-                <img src={require('../../../assets/earth/ticket-1.jpg')} />
-                <img src={require('../../../assets/earth/ticket-2.jpg')} />
-                <img src={require('../../../assets/earth/ticket-3.jpg')} />
+                <img src={require('../../../assets/earth/ticket-1.jpg')} alt='' />
+                <img src={require('../../../assets/earth/ticket-2.jpg')} alt='' />
+                <img src={require('../../../assets/earth/ticket-3.jpg')} alt='' />
                 <h3>House Organ</h3>
                 <ul className="cols">
-                    <li><img src={require('../../../assets/earth/house-organ-1.jpg')} /></li>
-                    <li><img src={require('../../../assets/earth/house-organ-2.jpg')} /></li>
+                    <li><img src={require('../../../assets/earth/house-organ-1.jpg')} alt='' /></li>
+                    <li><img src={require('../../../assets/earth/house-organ-2.jpg')} alt='' /></li>
                 </ul>
                 <h3>Special Takeaways: Book</h3>
-                <img src={require('../../../assets/earth/book.png')} />
+                <img src={require('../../../assets/earth/book.png')} alt='' />
             </div>
         </div>
     );

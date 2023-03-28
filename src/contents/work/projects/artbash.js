@@ -17,14 +17,14 @@ const Artbash = () => {
 
             <div className='project-main'>
                 <section id='overview'>
-                    <img className="fullscreen" src={require('../../../assets/artbash/poster-1main.png')} />
+                    <img className="fullscreen" src={require('../../../assets/artbash/poster-1main.png')} alt='' />
                 </section>
 
                 <section id='concept'>
                     <h2>Ideas & Concept</h2>
                     <ul className='cols small'>
-                        <li><img src={require('../../../assets/artbash/sketch1.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/sketch2.png')} /></li>
+                        <li><img src={require('../../../assets/artbash/sketch1.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/sketch2.png')} alt='' /></li>
                     </ul>
 
                     <h3>Concept Statement</h3>
@@ -37,10 +37,10 @@ const Artbash = () => {
 
                     <h3>Event Posters</h3>
                     <ul className="cols col4">
-                        <li><img src={require('../../../assets/artbash/process1.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/process2.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/process3.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/poster-sitesight.png')} /></li>
+                        <li><img src={require('../../../assets/artbash/process1.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/process2.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/process3.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/poster-sitesight.png')} alt='' /></li>
                     </ul>
                     <h3>Main Poster</h3>
                     <ul className="cols">
@@ -55,30 +55,30 @@ const Artbash = () => {
                 <section id='outcomes'>
                     <h2>Final Outcome</h2>
                     <h3>Main Poster</h3>
-                    <img src={require('../../../assets/artbash/poster-1main.png')} />
+                    <img src={require('../../../assets/artbash/poster-1main.png')} alt='' />
 
                     <h3>Event Posters</h3>
                     <ul className="cols">
-                        <li><img src={require('../../../assets/artbash/poster-blackbox.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/poster-interaction.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/poster-sitesight.png')} /></li>
+                        <li><img src={require('../../../assets/artbash/poster-blackbox.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/poster-interaction.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/poster-sitesight.png')} alt='' /></li>
                     </ul>
                     <ul className="cols">
-                        <li><img src={require('../../../assets/artbash/poster-bookarts.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/poster-482412.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/poster-opencall.png')} /></li>
+                        <li><img src={require('../../../assets/artbash/poster-bookarts.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/poster-482412.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/poster-opencall.png')} alt='' /></li>
                     </ul>
 
                     <h3>Instagram Posts</h3>
                     <ul className="cols">
-                        <li><img src={require('../../../assets/artbash/ig-blackbox.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/ig-interaction.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/ig-sitesight.png')} /></li>
+                        <li><img src={require('../../../assets/artbash/ig-blackbox.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/ig-interaction.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/ig-sitesight.png')} alt='' /></li>
                     </ul>
                     <ul className="cols">
-                        <li><img src={require('../../../assets/artbash/ig-bookarts.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/ig-482412.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/ig-opencall.png')} /></li>
+                        <li><img src={require('../../../assets/artbash/ig-bookarts.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/ig-482412.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/ig-opencall.png')} alt='' /></li>
                     </ul>
                 </section>
             </div>

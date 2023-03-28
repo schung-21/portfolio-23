@@ -15,10 +15,10 @@ const Dsmith = () => {
             />
 
             <div className="project-main">
-                <img className="fullscreen" src={require('../../../assets/dsmith/page-1.png')} />
-                <img src={require('../../../assets/dsmith/cover.png')} />
-                <img src={require('../../../assets/dsmith/page-2.png')} />
-                <img src={require('../../../assets/dsmith/page-3.png')} />
+                <img className="fullscreen" src={require('../../../assets/dsmith/page-1.png')} alt='' />
+                <img src={require('../../../assets/dsmith/cover.png')} alt='' />
+                <img src={require('../../../assets/dsmith/page-2.png')} alt='' />
+                <img src={require('../../../assets/dsmith/page-3.png')} alt='' />
             </div>
         </div>
     );
