@@ -5,7 +5,7 @@ const Card = ({ work }) => {
     const { title, tags, year, thumb, slug } = work;
 
     return (
-        <Link to={'/work/' + slug} className='thumb'>
+        <Link to={'/' + slug} className='thumb'>
             <img src={thumb} alt={title} />
             <div className="thumb-detail">
                 <div className='thumb-title'>

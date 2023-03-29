@@ -44,11 +44,11 @@ const Artbash = () => {
                     </ul>
                     <h3>Main Poster</h3>
                     <ul className="cols">
-                        <li><img src={require('../../../assets/artbash/process4.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/process5.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/process6.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/process7.png')} /></li>
-                        <li><img src={require('../../../assets/artbash/poster-1main.png')} /></li>
+                        <li><img src={require('../../../assets/artbash/process4.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/process5.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/process6.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/process7.png')} alt='' /></li>
+                        <li><img src={require('../../../assets/artbash/poster-1main.png')} alt='' /></li>
                     </ul>
                 </section>
 

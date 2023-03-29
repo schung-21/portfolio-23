@@ -12,7 +12,7 @@ import './App.scss';
 const router = createBrowserRouter(createRoutesFromElements(
 	<Route path='/' element={ <Root/> } errorElement={<Error/>}>
 		<Route index element={ <Work/> } />
-		<Route path='work/:project' element={ <Project/> } />
+		<Route path=':project' element={ <Project/> } />
 		<Route path='play' element={ <Play/> } />
 		<Route path='about' element={ <About/> } />
 	</Route>
