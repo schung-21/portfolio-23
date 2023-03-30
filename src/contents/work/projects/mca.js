@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Brief from "../../../components/brief";
+import ProjectNav from '../../../components/projectNav';
 
 const Mca = () => {
     const mca = useSelector((state) => state.work.work[1]);
@@ -34,6 +35,8 @@ const Mca = () => {
                 <h3>Website</h3>
                 <img src={require('../../../assets/mca/website.png')} alt='' />
             </div>
+
+            <ProjectNav prev='/artbash' next='/because-earth' />
         </div>
     );
 };

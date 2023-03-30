@@ -83,7 +83,7 @@ const Artbash = () => {
                 </section>
             </div>
 
-            <ProjectNav next='/work/mca' />
+            <ProjectNav prev='/beer' next='/mca' />
         </div>
     );
 };

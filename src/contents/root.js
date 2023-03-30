@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 import Navigation from "../components/nav";
+import Footer from "../components/footer";
 import {ReactComponent as Logo} from '../assets/icons/logo.svg';
 
 const Root = () => {
@@ -20,6 +21,8 @@ const Root = () => {
             <main>
                 <Outlet />
             </main>
+
+            <Footer />
         </div>
     );
 };

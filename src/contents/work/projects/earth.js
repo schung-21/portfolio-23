@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Brief from "../../../components/brief";
+import ProjectNav from '../../../components/projectNav';
 
 const Earth = () => {
     const earth = useSelector((state) => state.work.work[2]);
@@ -35,6 +36,8 @@ const Earth = () => {
                 <h3>Special Takeaways: Book</h3>
                 <img src={require('../../../assets/earth/book.png')} alt='' />
             </div>
+
+            <ProjectNav prev='/mca' next='/david-smith' />
         </div>
     );
 };

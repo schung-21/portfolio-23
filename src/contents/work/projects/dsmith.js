@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Brief from "../../../components/brief";
+import ProjectNav from '../../../components/projectNav';
 
 const Dsmith = () => {
     const dsmith = useSelector((state) => state.work.work[3]);
@@ -20,6 +21,8 @@ const Dsmith = () => {
                 <img src={require('../../../assets/dsmith/page-2.png')} alt='' />
                 <img src={require('../../../assets/dsmith/page-3.png')} alt='' />
             </div>
+
+            <ProjectNav prev='/because-earth' next='/beer' />
         </div>
     );
 };

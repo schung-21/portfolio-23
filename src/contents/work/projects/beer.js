@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from "react-redux";
 import Brief from "../../../components/brief";
+import ProjectNav from '../../../components/projectNav';
 
 const Beer = () => {
     const beer = useSelector((state) => state.work.work[4]);
@@ -26,6 +27,8 @@ const Beer = () => {
                 <li><img src={require('../../../assets/beer/account.png')} alt='' /></li>
                 </ul>
             </div>
+
+            <ProjectNav prev='/artbash' next='/artbash' />
         </div>
     );
 };
