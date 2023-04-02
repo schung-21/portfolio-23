@@ -35,26 +35,10 @@
         }
     }
 
-    .intro {
+    p {
         margin: 2rem;
         font-size: 18px;
         line-height: 1.7;
-    }
-
-    .cols {
-        display: grid;
-        grid-template: auto / 1fr 1fr;
-        column-gap: .5rem;
-
-        div p {
-            margin: .5rem 1rem; 
-            font-size: 14px;
-        }
-
-        img {
-            width: 100%;
-            border-radius: 1.5rem;
-        }
     }
 
     .contact {

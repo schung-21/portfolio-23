@@ -1,5 +1,20 @@
 @import '../../index.scss';
 
+.play-container {
+    position: absolute;
+    top: 0; 
+    height: 200vh;
+    @media (max-width: $bp-tablet) {height: 330vh;}
+	@media (max-width: $bp-phone) {height: 640vh;}
+}
+
+.play-intro {
+    color: $primary;
+    padding: 5rem 20vw 5rem;
+	@media (max-width: $bp-tablet) {padding: 5rem 10rem 5rem;}
+	@media (max-width: $bp-phone) {padding: 5rem 2rem 5rem;}
+}
+
 .play {
     padding: 2rem 10vw 10rem;
 	@media (max-width: $bp-tablet) {padding: 2rem 3rem 10rem;}
@@ -21,6 +36,85 @@
             height: 100%; width: 100%;
             transition: $transition;
             &:hover {scale: 1.1;}
+        }
+    }
+}
+
+.bg {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 75vw;
+    height: 80vh;
+    background: $bg-light;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    @media (max-width: $bp-tablet) {
+        max-width: 85vw;
+        height: auto;
+    }
+
+    @media (max-width: $bp-phone) {
+        flex-flow: column;
+        max-width: 85vw;
+        max-height: 80vh;
+        overflow: scroll;
+    }
+
+    .close {
+        @extend %button-nobg;
+        position: absolute;
+        top: 2rem; right: 2rem;
+        font-size: 18px;
+        width: 2rem; height: 2rem;
+        background: $bg-light;
+        border-radius: 50%;
+    }
+
+    img {
+        max-height: 100%;
+        max-width: 70%;
+        border-radius: 1.5rem;
+        @media (max-width: $bp-phone) {max-width: 100%; border-radius: 1rem;}
+    }
+
+    & > div {
+        flex: 1 0 0;
+        margin: 3rem 2rem 3rem 0;
+        overflow: scroll;
+        @media (max-width: $bp-phone) {margin: 0;}
+
+        h2 {
+            color: $primary;
+            line-height: 1;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 0 2rem;
+            color: $primary;
+            font-size: 14px;
+        }
+
+        .taglist {
+            @extend %tags;
+            margin: 0;
         }
     }
 }

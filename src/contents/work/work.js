@@ -8,9 +8,6 @@ const Work = () => {
 
     return (
         <>
-            <div className="intro">
-                {/* <h3>Hey! I'm Soomin.<br/>I am a designer based in Chicago,<br/>currently looking for an internship.</h3> */}
-            </div>
             <div className='work'>
                 {works.map((work) => <Card work={work} key={work.slug} />)}
             </div>
