@@ -1,10 +1,12 @@
 import React from "react";
 
 const Brief = ({ work, brief, role, date }) => {
-    const {title, tags} = work;
+    const {title, tags, wip} = work;
 
     return (
         <div className="project-brief">
+
+            {wip ? <div className="wip">Work in progress</div> : ''}
 
             <h1>{title}</h1>
 

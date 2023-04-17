@@ -9,16 +9,20 @@ const About = () => {
     return (
         <div className="about">
             <section>
-                {/* <div className='profile'>
-                    <img id='icon1' src={require('../../assets/about/profile1.png')} alt='profile' />
-                </div> */}
                 <h2>About Me</h2>
                 <p>
-                    Hello! I'm Soomin, a designer based in Chicago. I'm currently a senior student studying in the School of Art Institute of Chicago, focusing on Visual Communication Design. I am also interested in front-end web development, usually working with React.js.
-                    <br/><br/>
-                    In my free time, I enjoy watching sci-fi movies and brewing coffee.
+                    Hello! I'm Soomin, a senior student studying in the School of Art Institute of Chicago, focusing on Visual Communication Design. I am also interested in UI/UX design and web development. 
                 </p>
             </section>
+
+            <section>
+                <h2>About My Portfolio</h2>
+                <p>I will be updating this website with new projects, so check in again if you're interested! I used <a href='https://react.dev/' target='_blank'>ReactJS</a> to build this website.</p>
+            </section>
+
+            {/* <section>
+                <h2>More about me</h2>
+            </section> */}
 
             <section className="contact">
                 <h2>Connect</h2>

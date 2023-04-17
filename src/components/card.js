@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Card = ({ work }) => {
-    const { title, tags, year, thumb, slug } = work;
+    const { title, tags, year, thumb, slug, wip } = work;
 
     return (
-        <Link to={'/' + slug} className='thumb'>
+        <a href={wip ? '#' : '/' + slug} className='thumb'>
+            {wip ? <div className='wip'>Coming Soon</div> : ''}
             <img src={thumb} alt={title} />
             <div className="thumb-detail">
                 <div className='thumb-title'>
@@ -16,7 +16,7 @@ const Card = ({ work }) => {
                     {tags.map(tag => <li key={tag}>{tag}</li>)}
                 </ul>
             </div>
-        </Link>
+        </a>
     );
 };
 

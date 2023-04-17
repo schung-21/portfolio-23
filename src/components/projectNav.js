@@ -8,8 +8,8 @@ const ProjectNav = ({ prev, next }) => {
 
     return (
         <div className='navigate'>
-            <Link to={prev}>Previous Project</Link> 
-            <Link to={next}>Next Project</Link>
+            <a href={prev}>Previous Project</a> 
+            <a href={next}>Next Project</a>
         </div>
     );
 };

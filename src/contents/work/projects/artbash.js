@@ -10,9 +10,9 @@ const Artbash = () => {
         <div className="project">
             <Brief
                 work={artbash} 
-                brief='Department of Contemporary Practices commissioned the Visual Communication Design students to create an identity and promotional materials for ArtBash, the freshman art exhibition. I designed the identity and promotional materials for ArtBash by highlighting their uniqueness and endless possibilities.'
+                brief='Department of Contemporary Practices commissioned the senior visual dommunication design students to create an identity and promotional materials for ArtBash, the freshman art exhibition. I designed the logo, posters, and social media campaign for ArtBash by highlighting their uniqueness and potentials.'
                 role='Designer, Student'
-                date='September - November 2022 (3 months)'
+                date='September - November 2022'
             />
 
             <div className='project-main'>
@@ -28,7 +28,7 @@ const Artbash = () => {
                     </ul>
 
                     <h3>Concept Statement</h3>
-                    <p>Students in the Contemporary Practices department use a wide range of media, techniques, and concepts in order to create their artworks. There are infinite possibilities where each student has their own, unique ideas. It feels like each student creates and develops their own universe, and expresses their universe through their works. Using the imagery of the universe, the <em>ArtBash 2023</em> posters represent the wide variety, uniqueness, and endless potential of the Contemporary Practices students and their art practices.</p>
+                    <p>Students in the Contemporary Practices department use a wide range of media, techniques, and concepts in order to create their artworks. There are infinite possibilities where each student has their own, unique ideas. Each student creates expresses their own universe through their works. Using the imagery of the universe, the <em>ArtBash 2023</em> posters represent the wide variety, uniqueness, and endless potential of the Contemporary Practices students and their art practices.</p>
                 </section>
 
                 <section id='iterations'>

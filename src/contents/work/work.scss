@@ -18,15 +18,16 @@
     row-gap: 2rem;
     column-gap: 2rem;
 
-    margin: 2rem 15vw 10rem;
-	@media (max-width: $bp-tablet) {margin: 2rem 3rem 10rem;}
+    margin: 4rem 15vw 10rem;
+	@media (max-width: $bp-tablet) {margin: 4rem 3rem 10rem;}
 	@media (max-width: $bp-phone) {
-        margin: 2rem 1.5rem 10rem;
+        margin: 4rem 1.5rem 10rem;
         grid-template: auto / 1fr; 
         row-gap: 1rem;
     }
 
     .thumb {
+        position: relative;
         aspect-ratio: auto 16 / 9;
         overflow: hidden;
         color: $primary;
@@ -34,6 +35,18 @@
         text-decoration: none;
         border-radius: 1rem;
         transition: $transition;
+
+        .wip {
+            position: absolute; 
+            top: 2rem; left: 2rem;
+            background: $primary;
+            color: $bg-light;
+            padding: .5rem 1rem;
+            border-radius: 2rem;
+            transform: rotate(-10deg);
+            z-index: 9;
+            transition: $transition;
+        }
 
         img {
             object-fit: cover;
@@ -71,6 +84,8 @@
         &:hover {
             transform: translateY(-.5rem);
             filter: $shadow;
+
+            .wip {color: $primary; background: $bg-light;}
 
             img {filter: brightness(0.5);}
 

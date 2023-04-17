@@ -3,12 +3,16 @@ import mcaThumb from '../assets/mca/thumb.png';
 import earthThumb from '../assets/earth/thumb.png';
 import dsmithThumb from '../assets/dsmith/thumb.png';
 import beerThumb from '../assets/beer/thumb.png';
+import ikeaThumb from '../assets/ikea/thumb.gif';
+import ssThumb from '../assets/ss/thumb.png';
 
 import Artbash from '../contents/work/projects/artbash';
 import Mca from '../contents/work/projects/mca';
 import Dsmith from '../contents/work/projects/dsmith';
 import Earth from '../contents/work/projects/earth';
 import Beer from '../contents/work/projects/beer';
+import Ikea from '../contents/work/projects/ikea';
+import SelfService from '../contents/work/projects/self-service';
 
 import WA from '../assets/play/1-wesanderson.png';
 import LC from '../assets/play/2-lucky-charms.png';
@@ -54,13 +58,29 @@ export const WORK = [
         slug: 'david-smith',
         content: <Dsmith />
     }, {
-        title: 'Summer Hackathon: Beer',
+        title: 'Summer Hackathon - Beer',
         tags: ['web', 'uiux', 'identity'],
         year: 2022,
         thumb: beerThumb,
         slug: 'beer',
         content: <Beer />
-    },
+    }, {
+        title: "IKEA - What's Your Next Move?",
+        tags: ['motion', 'commercial', 'social media'],
+        year: 2023,
+        thumb: ikeaThumb,
+        slug: 'ikea',
+        wip: true,
+        content: <Ikea />
+    }, {
+        title: 'Self Service',
+        tags: ['uiux'],
+        year: 2023,
+        thumb: ssThumb,
+        slug: 'self-service',
+        wip: true,
+        content: <SelfService />
+    }, 
 ];
 
 
