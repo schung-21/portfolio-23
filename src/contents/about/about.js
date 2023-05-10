@@ -11,7 +11,7 @@ const About = () => {
             <section>
                 <h2>About Me</h2>
                 <p>
-                    Hello! I'm Soomin, a senior student studying in the School of Art Institute of Chicago, focusing on Visual Communication Design. I am also interested in UI/UX design and web development. 
+                    Hello! I'm Soomin, a senior student studying in the School of Art Institute of Chicago, focusing on Visual Communication Design. As a designer,  I am also interested in UI/UX design and web development. 
                 </p>
             </section>
 
